@@ -1,0 +1,227 @@
+.portfolio-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 48px;
+  padding: 10px 0 20px;
+}
+
+.portfolio-container {
+  width: 84%;
+  margin: 0 auto;
+  background-color: #e8dfd2;
+  min-height: calc(100vh - 100px);
+  padding: 30px 6%;
+  box-sizing: border-box;
+}
+
+/* 헤더 */
+
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-site-name {
+  color: #111;
+  text-decoration: none;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.portfolio-menu {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.portfolio-menu a {
+  display: block;
+  width: 160px;
+  padding: 8px 0;
+
+  background-color: rgba(80, 80, 80, 0.2);
+  border-radius: 10px;
+
+  color: #111;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.portfolio-menu a:hover {
+  background-color: rgba(80, 80, 80, 0.35);
+}
+
+/* 프로필 */
+
+.resume-section {
+  margin-top: 50px;
+}
+
+.resume-section h2 {
+  margin-bottom: 20px;
+}
+
+.resume-content {
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 8px;
+}
+
+.resume-content div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* 포트폴리오 */
+
+.portfolio-content {
+  display: flex;
+  margin-top: 40px;
+  min-height: 500px;
+}
+
+/* 프로젝트 목록 */
+
+.project-list {
+  width: 240px;
+  background-color: #ffffff;
+  border: 2px solid #111;
+  box-sizing: border-box;
+}
+
+.project-item {
+  width: 100%;
+  min-height: 65px;
+
+  border: none;
+  border-bottom: 2px solid #111;
+
+  background-color: #ffffff;
+
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+.project-item:hover,
+.project-item.active {
+  background-color: #eeeeee;
+}
+
+/* 프로젝트 상세 */
+
+.project-detail {
+  flex: 1;
+  margin-left: 0;
+
+  padding: 30px 50px;
+
+  background-color: #eeeeee;
+  border-top: 2px solid #111;
+  border-right: 2px solid #111;
+  border-bottom: 2px solid #111;
+}
+
+.project-detail h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 28px;
+}
+
+.project-description {
+  margin: 40px 0;
+  font-size: 20px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-info p {
+  display: flex;
+  margin: 0;
+}
+
+.project-info strong {
+  width: 120px;
+}
+
+.project-info span {
+  flex: 1;
+}
+
+/* 프로젝트 이미지 */
+
+.project-image {
+  width: 300px;
+  height: 210px;
+
+  margin: 30px 0 20px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+  border: 2px solid #111;
+
+  font-size: 18px;
+}
+
+/* 버튼 */
+
+.project-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.project-button {
+  min-width: 150px;
+  padding: 10px 15px;
+
+  border: 2px solid #111;
+  background-color: #ffffff;
+
+  color: #111;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.project-button:hover:not(:disabled) {
+  background-color: #dddddd;
+}
+
+.project-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Footer */
+
+.portfolio-footer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+  margin-top: 40px;
+  padding: 20px 0;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
