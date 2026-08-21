@@ -58,7 +58,7 @@
 .intro-image {
   min-height: 500px;
 
-  background-image: url("/home/base.png");
+  background-image: url("../assets/home/base.png");
   background-size: cover;
   background-position: center;
 
