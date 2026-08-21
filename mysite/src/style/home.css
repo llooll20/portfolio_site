@@ -58,7 +58,7 @@
 .intro-image {
   min-height: 500px;
 
-  background-image: url("C:/Users/andfo/OneDrive/Desktop/development/portfolio_web/mysite/public/home/base.png");
+  background-image: url("/home/base.png");
   background-size: cover;
   background-position: center;
 
