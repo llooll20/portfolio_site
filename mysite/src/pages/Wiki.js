@@ -9,3 +9,5 @@ function Wiki() {
         </Layout>  
     );
 }
+
+export default Wiki;
