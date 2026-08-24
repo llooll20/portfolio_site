@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "../style/portfolio.css";
 
 //포트폴리오 프로젝트 데이터
-const projects = [
+/*const projects = [
     {
     id: 1,
     title: "Project 1",
@@ -21,7 +21,7 @@ const projects = [
     stack: "Java, Spring Boot, MySQL",
     myRole: "Backend Developer",
     }
-  ]
+  ]*/
 
 function Portfolio() {
   return (
@@ -134,13 +134,6 @@ function Portfolio() {
             </div>
           </main>
         </section>
-
-        {/* 하단 */}
-        <footer className="portfolio-footer">
-          <span>사이트 개설: 2026</span>
-          <span>개발자: SKI</span>
-          <span>이메일: example@email.com</span>
-        </footer>
       </div>
     </div>
   );
