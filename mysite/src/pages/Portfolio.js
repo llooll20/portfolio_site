@@ -1,28 +1,6 @@
 import { Link } from "react-router-dom";
 import "../style/portfolio.css";
 
-//포트폴리오 프로젝트 데이터
-/*const projects = [
-    {
-    id: 1,
-    title: "Project 1",
-    keywords: ["React", "Node.js", "Express"],
-    content: "This is the content of Project 1.",
-    peroid: "2023.01 ~ 2023.02",
-    stack: "React, Node.js, Express",
-    myRole: "Frontend Developer",
-    },
-    {
-    id: 2,
-    title: "Project 2",
-    keywords: ["Java", "Spring Boot", "MySQL"],
-    content: "This is the content of Project 2.",
-    peroid: "2023.03 ~ 2023.04",
-    stack: "Java, Spring Boot, MySQL",
-    myRole: "Backend Developer",
-    }
-  ]*/
-
 function Portfolio() {
   return (
     <div className="portfolio-page">
