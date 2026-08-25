@@ -1,4 +1,6 @@
 //페이지용 사이드바
+import { Link } from "react-router-dom";
+import "../style/Layout.css";
 
 function Sidebar() {
   return (
@@ -13,3 +15,5 @@ function Sidebar() {
     </aside>
   );
 }
+
+export default Sidebar;

@@ -2,6 +2,8 @@ import "./style/home.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
+import Wiki from "./pages/Wiki";
+import Playground from "./pages/Playground";
 
 function Home() {
   return (
@@ -44,6 +46,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<About />} />
+        <Route path="/wiki" element={<Wiki />} />
+        <Route path="/playground" element={<Playground />} />
       </Routes>
     </BrowserRouter>
   );

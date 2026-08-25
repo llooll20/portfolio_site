@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import "../style/portfolio.css";
+import Layout from "../components/Layout";
 
 function Portfolio() {
   return (
-    <div className="portfolio-page">
-      <div className="portfolio-title">Portfolio</div>
+    <Layout>
+      <div className="portfolio-page">
+        <div className="portfolio-title">Portfolio</div>
 
       <div className="portfolio-container">
         {/* 사이트 헤더 */}
@@ -114,6 +116,7 @@ function Portfolio() {
         </section>
       </div>
     </div>
+    </Layout>
   );
 }
 
