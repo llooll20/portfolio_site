@@ -29,12 +29,6 @@ function Home() {
           </div>
         </section>
       </main>
-
-      <footer className="home-footer">
-        <span>개설 일자</span>
-        <span>GitHub</span>
-        <span>개발자 이메일</span>
-      </footer>
     </div>
   );
 }

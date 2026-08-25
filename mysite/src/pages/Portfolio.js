@@ -2,49 +2,15 @@ import { Link } from "react-router-dom";
 import "../style/portfolio.css";
 import Layout from "../components/Layout";
 
+const portfoliomenu = [
+  { id: "profile", title: "이력서 / 소개" },
+  { id: "project1", title: "포트폴리오 1" },
+  { id: "project2", title: "포트폴리오 2" },
+];
 function Portfolio() {
   return (
-    <Layout>
+    <Layout sidebarItems={portfoliomenu}>
       <div className="portfolio-page">
-        <div className="portfolio-title">Portfolio</div>
-
-      <div className="portfolio-container">
-        {/* 사이트 헤더 */}
-        <header className="portfolio-header">
-          <Link to="/" className="portfolio-site-name">
-            SKIFUL
-          </Link>
-
-          <nav className="portfolio-menu">
-            <Link to="/about">About</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/wiki">Wiki</Link>
-            <Link to="/playground">Playground</Link>
-          </nav>
-        </header>
-
-        {/* 이력서 / 소개 */}
-        <section className="resume-section">
-          <h2>Profile</h2>
-
-          <div className="resume-content">
-            <div>
-              <strong>이름</strong>
-              <span>SKI</span>
-            </div>
-
-            <div>
-              <strong>학력</strong>
-              <span>소프트웨어 관련 전공</span>
-            </div>
-
-            <div>
-              <strong>개발 분야</strong>
-              <span>Software Development</span>
-            </div>
-          </div>
-        </section>
-
         {/* 포트폴리오 영역 */}
         <section className="portfolio-content">
 
@@ -115,7 +81,6 @@ function Portfolio() {
           </main>
         </section>
       </div>
-    </div>
     </Layout>
   );
 }

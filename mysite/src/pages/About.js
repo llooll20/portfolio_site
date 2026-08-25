@@ -1,26 +1,16 @@
 import { Link } from "react-router-dom";
 import "../style/about.css";
+import Layout from "../components/Layout";
+
+const aboutmenu = [
+  { id: "about1", title: "사이트 소개" },
+  { id: "about2", title: "개발자 정보" },
+];
 
 function About() {
   return (
+    <Layout sidebarItems={aboutmenu}>
     <div className="about-page">
-      <div className="about-title">About</div>
-
-      <div className="about-container">
-        {/* 헤더 */}
-        <header className="about-header">
-          <Link to="/" className="about-site-name">
-            SKIFUL
-          </Link>
-
-          <nav className="about-menu">
-            <Link to="/about">About</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/wiki">Wiki</Link>
-            <Link to="/playground">Playground</Link>
-          </nav>
-        </header>
-
         {/* About */}
         <section className="about-section">
           <h2>About</h2>
@@ -72,8 +62,8 @@ function About() {
           <span>개발자: SKI</span>
           <span>이메일: example@email.com</span>
         </footer>
-      </div>
     </div>
+  </Layout>
   );
 }
 

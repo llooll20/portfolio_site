@@ -1,12 +1,35 @@
 //페이지용 레이아웃
 
 import Sidebar from "./Sidebar";
+import "../style/Layout.css";
+import { Link } from "react-router-dom";
 
-function Layout({ children }) {
+function Layout({ children, sidebarItems }) {
   return (
     <div className="layout">
-      <Sidebar />
-      <main className="content">{children}</main>
+      <header className="site-header">
+        <Link to="/" className="site-name">
+          SKIFUL
+        </Link>
+        <nav className="site-menu">
+          <Link to="/about">About</Link>
+          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/wiki">Wiki</Link>
+          <Link to="/playground">Playground</Link>
+        </nav>
+      </header>
+      
+      <div className="page-body">
+        <Sidebar items={sidebarItems} />  
+        <main className="content">{children}</main>
+      </div>
+      
+      {/* 하단 */}
+        <footer className="about-footer">
+          <span>사이트 개설: 2026-08-23</span>
+          <span>개발자 Github: https://github.com/llooll20</span>
+          <span>이메일: skifull@outlook.kr</span>
+        </footer>
     </div>
   );
 }
