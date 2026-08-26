@@ -1,8 +1,8 @@
 import "./style/home.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Portfolio from "./pages/Portfolio";
+import Portfolio from "./pages/Portfolio/Portfolio";
 import About from "./pages/About";
-import Wiki from "./pages/Wiki";
+import Wiki from "./pages/Wiki/Wiki";
 import Playground from "./pages/Playground";
 
 function Home() {

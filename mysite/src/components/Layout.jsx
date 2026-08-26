@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 import "../style/Layout.css";
 import { Link } from "react-router-dom";
 
-function Layout({ children, sidebarItems }) {
+function Layout({ children, sidebarItems, onSidebarSelect }) {
   return (
     <div className="layout">
       <header className="site-header">
@@ -20,7 +20,7 @@ function Layout({ children, sidebarItems }) {
       </header>
       
       <div className="page-body">
-        <Sidebar items={sidebarItems} />  
+        <Sidebar items={sidebarItems} onSelect={onSidebarSelect} />  
         <main className="content">{children}</main>
       </div>
       

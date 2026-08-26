@@ -1,6 +1,6 @@
 
-import "../style/portfolio.css";
-import Layout from "../components/Layout";
+import "../../style/portfolio.css";
+import Layout from "../../components/Layout";
 
 const portfoliomenu = [
   { id: "profile", title: "이력서 / 소개" },
