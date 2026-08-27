@@ -1,0 +1,69 @@
+import { Link } from "react-router-dom";
+
+function Project1() {
+    return (
+        <div className="portfolio-page">
+        {/* 포트폴리오 영역 */}
+        <section className="portfolio-content">
+
+
+          {/* 프로젝트 상세 */}
+          <main className="project-detail">
+            <h1>포트폴리오 1 제목</h1>
+
+            <p className="project-description">
+              포트폴리오 프로젝트의 개요를 작성하는 영역입니다.
+            </p>
+
+            <div className="project-info">
+              <p>
+                <strong>개발 기간</strong>
+                <span>2026.01 ~ 2026.03</span>
+              </p>
+
+              <p>
+                <strong>개발 역할</strong>
+                <span>개인 프로젝트</span>
+              </p>
+
+              <p>
+                <strong>기술 스택</strong>
+                <span>React, C#, ASP.NET Core</span>
+              </p>
+
+              <p>
+                <strong>주요 기술</strong>
+                <span>REST API, PostgreSQL, Docker</span>
+              </p>
+            </div>
+
+            {/* 이미지 업로드 기능은 구현하지 않고 자리만 만든다 */}
+            <div className="project-image">
+              프로젝트 이미지
+            </div>
+
+            <div className="project-actions">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="project-button"
+              >
+                Github 이동
+              </a>
+
+              <button
+                type="button"
+                className="project-button"
+                disabled
+              >
+                프로젝트 다운로드
+              </button>
+            </div>
+          </main>
+        </section>
+      </div>
+    );
+}
+
+export default Project1;

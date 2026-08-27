@@ -26,9 +26,9 @@ function Layout({ children, sidebarItems, onSidebarSelect }) {
       
       {/* 하단 */}
         <footer className="about-footer">
-          <span>사이트 개설: 2026-08-23</span>
-          <span>개발자 Github: https://github.com/llooll20</span>
-          <span>이메일: skifull@outlook.kr</span>
+          <span>since 2026-08-23</span>
+          <span>Github https://github.com/llooll20</span>
+          <span>email skifull@outlook.kr</span>
         </footer>
     </div>
   );
