@@ -1,6 +1,6 @@
-import stok_bot_Image from "../../../assets/Portfolio_images/stock_chart.png";
+import mission_img from "../../../assets/Portfolio_images/mission_project.png";
 
-function Project1() {
+function Project3() {
     return (
         <div className="portfolio-page">
         {/* 포트폴리오 영역 */}
@@ -9,60 +9,60 @@ function Project1() {
 
           {/* 프로젝트 상세 */}
           <main className="project-detail">
-            <h1>주식 차트 웹사이트</h1>
+            <h1>Mission project</h1>
 
             <p className="project-description">
-              주식 차트를 제공하고 사용자가 저장한 구간 정보를 저장하는 웹사이트
+              일/주간 퀘스트 창 형태의 미션 프로그램
             </p>
 
             <div className="project-info">
               <p>
                 <strong>개발 기간</strong>
-                <span>2024.09 ~ 2026.12</span>
+                <span>2026.03 ~ 2026.07</span>
               </p>
 
               <p>
                 <strong>개발 역할</strong>
-                <span>백엔드 개발(데이터 수집 및 전달, 사용자 개인정보 저장 구현, 그래프 유사 구간 검색)</span>
+                <span>전체 개발 (UI/UX Design, Frontend Development, Backend Development)</span>
               </p>
 
               <p>
                 <strong>기술 스택</strong>
-                <span>Pico, Python, Express, SQLite</span>
+                <span>WPF, C#, XAML</span>
               </p>
 
               <p>
                 <strong>주요 기술</strong>
-                <span>REST API, SQL, Git</span>
+                <span>MVVM, Data Binding</span>
               </p>
             </div>
 
             <div className="project-intro">
               <div className="description">
                 <p>
-                  주식 차트 웹사이트는 사용자가 주식 차트를 확인하고, 
+                  Mission project는 일/주간 퀘스트 창 형태의 미션 프로그램으로,
                   <br/>
-                  특정 구간을 포트폴리오로 저장할 수 있는 웹사이트입니다. 
+                   사용자가 목표를 설정하고 달성할 수 있도록 돕습니다. 
                   <br/><br/>
-                  백엔드 개발자로서 
-                  <br/>데이터 수집 및 전달, 사용자 개인정보 저장 구현, 그래프 유사 구간 검색 기능을 담당했습니다.
+                  프로젝트 개발자로서 UI/UX Design, Frontend Development, Backend Development를 담당했습니다.
                 </p>
               </div>
 
               {/* 이미지 업로드 기능*/}
               <div className="project-image">
                 <img
-                  src={stok_bot_Image}
-                  alt="주식 차트 웹사이트 이미지"
+                  src={mission_img}
+                  alt="Mission project 이미지"
                   className="profile-image"
                 />
               </div>
-            </div>
-            
 
+            </div>
+
+            
             <div className="project-actions">
               <a
-                href="https://github.com/llooll20/stock_bot"
+                href="https://github.com/llooll20/Daily-Weekly-Mission"
                 target="_blank"
                 rel="noreferrer"
                 className="project-button"
@@ -76,4 +76,4 @@ function Project1() {
     );
 }
 
-export default Project1;
+export default Project3;

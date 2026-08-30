@@ -15,7 +15,7 @@ function About() {
             onSidebarSelect={setSelectedAbout}
             >
               <div className="about-page">
-            <div className="about-content">about
+            <div className="about-content">
                 {selectedAbout === "about1" && <SiteInfo />}
             </div>
             </div>
