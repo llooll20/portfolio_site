@@ -40,9 +40,9 @@ function Project4() {
             <div className="project-intro">
               <div className="description">
                 <p>
-                  Skifull Website는 개인용 웹사이트로 자신의 포트폴리오와 프로젝트를 소개하는 사이트입니다.
+                  개인용 웹사이트로 자신의 포트폴리오와 프로젝트를 소개하는 사이트
                   <br/><br/>
-                  프로젝트 개발자로서 UI/UX Design, Frontend Development, Backend Development를 담당했습니다.
+                  프로젝트 개발자로서 UI/UX Design, Frontend Development, Backend Development를 담당
                 </p>
               </div>
 

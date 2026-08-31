@@ -11,8 +11,11 @@ const aboutmenu = [
 function About() {
   const [selectedAbout, setSelectedAbout] = useState("about1");
   return (
-    <Layout sidebarItems={aboutmenu}
+    <Layout 
+            currentPage="About"
+            sidebarItems={aboutmenu}
             onSidebarSelect={setSelectedAbout}
+            selectedItem={selectedAbout}
             >
               <div className="about-page">
             <div className="about-content">

@@ -40,11 +40,9 @@ function Project3() {
             <div className="project-intro">
               <div className="description">
                 <p>
-                  Mission project는 일/주간 퀘스트 창 형태의 미션 프로그램으로,
-                  <br/>
-                   사용자가 목표를 설정하고 달성할 수 있도록 돕습니다. 
+                  일/주간 퀘스트 추가, 삭제, 기록보기등의 기능을 지원하는 윈도우 미션 프로그램
                   <br/><br/>
-                  프로젝트 개발자로서 UI/UX Design, Frontend Development, Backend Development를 담당했습니다.
+                  프로젝트 개발자로서 UI/UX Design, Frontend Development, Backend Development 담당
                 </p>
               </div>
 

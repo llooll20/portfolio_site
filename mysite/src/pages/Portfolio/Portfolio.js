@@ -10,19 +10,21 @@ import Project3 from "./Portfolio_content/Project3";
 import Project4 from "./Portfolio_content/Project4";
 
 const portfoliomenu = [
-  { id: "profile", title: "이력서 / 소개" },
-  { id: "project1", title: "포트폴리오 1" },
-  { id: "project2", title: "포트폴리오 2" },
-  { id: "project3", title: "포트폴리오 3" },
-  { id: "project4", title: "포트폴리오 4" },
+  { id: "profile", title: "Profile" },
+  { id: "project1", title: "주식 차트 웹사이트" },
+  { id: "project2", title: "Say Something" },
+  { id: "project3", title: "Mission project" },
+  { id: "project4", title: "Skifull Website" },
 ];
 
 function Portfolio() {
   const [selectedPortfolio, setSelectedPortfolio] = useState("profile");
   return (
     <Layout
+      currentPage="Portfolio"
       sidebarItems={portfoliomenu}
-      onSidebarSelect={setSelectedPortfolio}>
+      onSidebarSelect={setSelectedPortfolio}
+      selectedItem={selectedPortfolio}>
             <div className="portfolio-page">
             <div className="portfolio-title">
                 {selectedPortfolio === "profile" && <Profile />}

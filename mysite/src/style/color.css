@@ -1,0 +1,15 @@
+:root {
+  --bg-main: #0f1115;
+  --bg-sidebar: #151820;
+  --bg-card: #1c2029;
+  --bg-hover: #252b36;
+
+  --text-primary: #f1f3f5;
+  --text-secondary: #a8adb7;
+  --text-muted: #707784;
+
+  --border: #2c323d;
+
+  --accent: #4f6df5;
+  --accent-hover: #6580ff;
+}

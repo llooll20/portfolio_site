@@ -1,4 +1,5 @@
 import "./style/home.css";
+import "./style/color.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import About from "./pages/About/About";
@@ -8,6 +9,7 @@ import Playground from "./pages/Playground/Playground";
 function Home() {
   return (
     <div className="home">
+      <div className="site-container">
       <header className="home-header">
         <div className="site-title">SKIFUL</div>
 
@@ -29,6 +31,7 @@ function Home() {
           </div>
         </section>
       </main>
+      </div>
     </div>
   );
 }

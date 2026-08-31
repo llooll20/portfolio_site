@@ -17,10 +17,12 @@ function Wiki() {
     const [selectedWiki, setSelectedWiki] = useState("MVC");
     return (
         <Layout 
+        currentPage="Wiki"
         sidebarItems={wikimenu}
-        onSidebarSelect={setSelectedWiki}>
+        onSidebarSelect={setSelectedWiki}
+        selectedItem={selectedWiki}>
             <div className="wiki-page">
-            <div className="wiki-title">Wiki
+            <div className="wiki-title">
                 {selectedWiki === "MVC" && <MVC />}
                 {selectedWiki === "MVP" && <MVP />}
                 {selectedWiki === "MVVM" && <MVVM />}

@@ -13,10 +13,14 @@ const playgroundmenu = [
 function Playground() {
     const [selectedPlayground, setSelectedPlayground] = useState("Playground1");
     return (
-        <Layout sidebarItems={playgroundmenu}
-        onSidebarSelect={setSelectedPlayground}>
+        <Layout 
+        currentPage="Playground" 
+        sidebarItems={playgroundmenu} 
+        onSidebarSelect={setSelectedPlayground} 
+        electedItem={selectedPlayground}>
+            
             <div className="Playground-page">
-            <div className="Playground-title">Playground
+            <div className="Playground-title">
                 {selectedPlayground === "Playground1" && <Playground1 />}
                 {selectedPlayground === "Playground2" && <Playground2 />}
             </div>

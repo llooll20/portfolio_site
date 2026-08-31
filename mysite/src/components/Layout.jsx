@@ -1,12 +1,13 @@
 //페이지용 레이아웃
 
 import Sidebar from "./Sidebar";
-import "../style/Layout.css";
+import "../style/layout.css";
 import { Link } from "react-router-dom";
 
-function Layout({ children, sidebarItems, onSidebarSelect }) {
+function Layout({ children, currentPage, sidebarItems, onSidebarSelect, selectedItem }) {
   return (
     <div className="layout">
+      <div className="site-container">
       <header className="site-header">
         <Link to="/" className="site-name">
           SKIFUL
@@ -20,10 +21,15 @@ function Layout({ children, sidebarItems, onSidebarSelect }) {
       </header>
       
       <div className="page-body">
-        <Sidebar items={sidebarItems} onSelect={onSidebarSelect} />  
+        <Sidebar 
+        currentPage={currentPage} 
+        items={sidebarItems} 
+        onSelect={onSidebarSelect} 
+        selectedItem={selectedItem} />  
         <main className="content">{children}</main>
       </div>
       
+      </div>
       {/* 하단 */}
         <footer className="about-footer">
           <span>since 2026-08-23</span>

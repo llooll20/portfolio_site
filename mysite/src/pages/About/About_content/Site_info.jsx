@@ -48,13 +48,6 @@ function SiteInfo() {
             </div>
           </div>
         </section>
-
-        {/* 하단 */}
-        <footer className="about-footer">
-          <span>사이트 개설: 2026</span>
-          <span>개발자: SKI</span>
-          <span>이메일: example@email.com</span>
-        </footer>
     </div>
         </div>
     );

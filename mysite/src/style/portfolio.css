@@ -1,19 +1,20 @@
 .portfolio-page {
   min-height: 100vh;
-  background-color: #ffffff;
-  color: #111111;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
 }
 
 .site-title {
   text-align: center;
   font-size: 48px;
   padding: 10px 0 20px;
+  color: var(--text-primary);
 }
 
 .portfolio-container {
   width: 84%;
   margin: 0 auto;
-  background-color: #e8dfd2;
+  background-color: var(--bg-main);
   min-height: calc(100vh - 100px);
   padding: 30px 6%;
   box-sizing: border-box;
@@ -28,7 +29,7 @@
 }
 
 .portfolio-site-name {
-  color: #111;
+  color: var(--text-primary);
   text-decoration: none;
   font-size: 48px;
   margin-bottom: 30px;
@@ -45,17 +46,17 @@
   width: 160px;
   padding: 8px 0;
 
-  background-color: rgba(80, 80, 80, 0.2);
+  background-color: var(--bg-hover);
   border-radius: 10px;
 
-  color: #111;
+  color: var(--text-primary);
   text-align: center;
   text-decoration: none;
   font-size: 18px;
 }
 
 .portfolio-menu a:hover {
-  background-color: rgba(80, 80, 80, 0.35);
+  background-color: var(--border);
 }
 
 /* 프로필 */
@@ -66,13 +67,15 @@
 
 .resume-section h2 {
   margin-bottom: 20px;
+  color: var(--text-primary);
 }
 
 .resume-content {
   display: flex;
   gap: 50px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.35);
+
+  background-color: var(--bg-card);
   border-radius: 8px;
 }
 
@@ -94,8 +97,8 @@
 
 .project-list {
   width: 240px;
-  background-color: #ffffff;
-  border: 2px solid #111;
+  background-color: var(--bg-sidebar);
+  border: 2px solid var(--border);
   box-sizing: border-box;
 }
 
@@ -104,9 +107,10 @@
   min-height: 65px;
 
   border: none;
-  border-bottom: 2px solid #111;
+  border-bottom: 2px solid var(--border);
 
-  background-color: #ffffff;
+  background-color: var(--bg-sidebar);
+  color: var(--text-secondary);
 
   font-size: 17px;
   cursor: pointer;
@@ -118,7 +122,8 @@
 
 .project-item:hover,
 .project-item.active {
-  background-color: #eeeeee;
+  background-color: var(--bg-hover);
+  color: var(--text-primary);
 }
 
 /* 프로젝트 상세 */
@@ -126,24 +131,28 @@
 .project-detail {
   flex: 1;
   margin-left: 0;
-
   padding: 30px 50px;
 
-  background-color: #eeeeee;
-  border-top: 2px solid #111;
-  border-right: 2px solid #111;
-  border-bottom: 2px solid #111;
+  background-color: var(--bg-card);
+
+  border-top: 2px solid var(--border);
+  border-right: 2px solid var(--border);
+  border-bottom: 2px solid var(--border);
+
+  box-sizing: border-box;
 }
 
 .project-detail h1 {
   margin-top: 0;
   text-align: center;
   font-size: 28px;
+  color: var(--text-primary);
 }
 
 .project-description {
   margin: 40px 0;
   font-size: 20px;
+  color: var(--text-secondary);
 }
 
 .project-info {
@@ -159,20 +168,23 @@
 
 .project-info strong {
   width: 120px;
+  color: var(--text-primary);
 }
 
 .project-info span {
   flex: 1;
+  color: var(--text-secondary);
 }
 
 /* 프로젝트 설명 및 이미지 */
+
 .project-intro {
   display: flex;
   align-items: center;
   gap: 60px;
-
   margin-top: 70px;
 }
+
 .description {
   flex: 1;
   display: flex;
@@ -182,9 +194,11 @@
 .description p {
   margin: 0;
   line-height: 1.8;
+  color: var(--text-secondary);
 }
 
 /* 프로젝트 이미지 */
+
 .project-image {
   width: 300px;
   height: 210px;
@@ -195,8 +209,8 @@
   align-items: center;
   justify-content: center;
 
-  border: 2px solid #111;
-  background-color: #fff;
+  border: 2px solid var(--border);
+  background-color: var(--bg-sidebar);
 }
 
 .project-image img {
@@ -217,17 +231,17 @@
   min-width: 150px;
   padding: 10px 15px;
 
-  border: 2px solid #111;
-  background-color: #ffffff;
+  border: 2px solid var(--border);
+  background-color: var(--bg-sidebar);
+  color: var(--text-primary);
 
-  color: #111;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
 }
 
 .project-button:hover:not(:disabled) {
-  background-color: #dddddd;
+  background-color: var(--bg-hover);
 }
 
 .project-button:disabled {
@@ -241,9 +255,9 @@
   display: flex;
   justify-content: center;
   gap: 50px;
-
   margin-top: 40px;
   padding: 20px 0;
 
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
 }

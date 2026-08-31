@@ -40,11 +40,11 @@ function Project2() {
             <div className="project-intro">
               <div className="description">
                 <p>
-                  Say Something은 MCP를 활용한 AI 음성비서 시스템으로, 사용자의 음성으로 특정 동작을 돕습니다. 
+                  사용자 음성을 활용한 MCP 기반 AI 음성비서 시스템
                   <br/><br/>
-                  백엔드 개발자로서 Autogen 환경에 AI를 연결하고, AI와 MCP 툴을 연결하여
+                  백엔드 개발자로 Autogen 환경에 AI를 연결하고, AI와 MCP 툴을 연결하여
                   <br/>
-                   client에 데이터를 전송을 구현하는 역할을 담당했습니다.
+                   client에 데이터를 전송을 구현
                 </p>
               </div>
 

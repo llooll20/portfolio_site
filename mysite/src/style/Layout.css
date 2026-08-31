@@ -1,8 +1,15 @@
-
 .layout {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+
+.site-container {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: var(--bg-main);
 }
 
 .site-header {
@@ -14,7 +21,7 @@
 
   padding: 0 32px;
 
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border);
 }
 
 .site-menu {
@@ -26,7 +33,6 @@
 .page-body {
   display: flex;
   flex: 1;
-  min-height: 0;
 }
 
 .content {
@@ -42,5 +48,6 @@
 
   padding: 20px;
 
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
 }

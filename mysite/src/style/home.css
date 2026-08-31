@@ -1,86 +1,86 @@
 .home {
   min-height: 100vh;
-  background-color: #e8dfd2;
-  color: #222;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+
   display: flex;
   flex-direction: column;
 }
-
+.site-container {
+  width: 1280px;
+  margin: 0 auto;
+}
 /* 상단 */
 
 .home-header {
-  padding: 24px 8%;
+  padding: 40px 0 0;
 }
 
 .site-title {
   text-align: center;
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 400;
   letter-spacing: 2px;
+  color: var(--text-primary);
 }
 
 .menu {
   display: flex;
   justify-content: center;
-  gap: 90px;
+  gap: 50px;
   margin-top: 40px;
 }
 
 .menu a {
   width: 160px;
   padding: 10px 0;
+
   text-align: center;
 
-  background-color: rgba(80, 80, 80, 0.2);
-  color: #222;
+  background-color: var(--bg-hover);
+  color: var(--text-primary);
 
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 8px;
 
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .menu a:hover {
-  background-color: rgba(80, 80, 80, 0.35);
+  background-color: var(--border);
 }
 
 /* 본문 */
 
 .home-main {
   flex: 1;
-  padding: 60px 8%;
+  padding: 60px 0;
 }
 
 .intro {
   width: 100%;
 }
 
-.intro-image {
-  min-height: 500px;
-
-  background-image: url("../assets/home/base.png");
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
 .intro-text {
-  padding: 80px 100px;
-  font-size: 38px;
-  line-height: 1.5;
+  padding: 60px 80px;
+
+  font-size: 32px;
+  line-height: 1.6;
+
+  color: var(--text-primary);
 }
 
 /* 하단 */
 
 .home-footer {
-  padding: 24px 8%;
+  padding: 24px 0;
 
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 50px;
 
-  font-size: 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+
+  border-top: 1px solid var(--border);
 }

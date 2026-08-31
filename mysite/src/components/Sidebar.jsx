@@ -1,14 +1,15 @@
 //페이지용 사이드바
-import "../style/Sidebar.css";
+import "../style/sidebar.css";
 
-function Sidebar({items, onSelect}) {
+function Sidebar({currentPage,items, onSelect, selectedItem}) {
   return (
     <aside className="sidebar">
-      <h2>Sidebar</h2>
+      <h2>{currentPage}</h2>
       <nav className="sidebar-menu">
         {items.map((item) => (
           <button
             key={item.id}
+            className={selectedItem === item.id ? "active" : ""}
             onClick={() => onSelect(item.id)}
           >
             {item.title}
