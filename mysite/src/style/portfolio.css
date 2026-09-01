@@ -198,12 +198,14 @@
 }
 
 /* 프로젝트 이미지 */
+.project-media {
+  width: 300px;
+  flex-shrink: 0;
+}
 
 .project-image {
   width: 300px;
   height: 210px;
-
-  flex-shrink: 0;
 
   display: flex;
   align-items: center;
@@ -211,6 +213,7 @@
 
   border: 2px solid var(--border);
   background-color: var(--bg-sidebar);
+  box-sizing: border-box;
 }
 
 .project-image img {
@@ -222,13 +225,18 @@
 /* 버튼 */
 
 .project-actions {
+  width: 300px;
+
   display: flex;
   justify-content: flex-end;
   gap: 5px;
+
+  margin-top: 10px;
 }
 
 .project-button {
-  min-width: 150px;
+  flex: 1;
+
   padding: 10px 15px;
 
   border: 2px solid var(--border);
@@ -237,7 +245,7 @@
 
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .project-button:hover:not(:disabled) {

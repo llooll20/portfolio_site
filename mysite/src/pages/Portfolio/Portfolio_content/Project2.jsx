@@ -48,6 +48,7 @@ function Project2() {
                 </p>
               </div>
 
+              <div className="project-media">
               {/* 이미지 업로드 기능*/}
               <div className="project-image">
                 <img
@@ -56,11 +57,7 @@ function Project2() {
                   className="profile-image"
                 />
               </div>
-            </div>
-
-            
-
-            <div className="project-actions">
+                          <div className="project-actions">
               <a
                 href="https://github.com/chs991209/SaySth-2025"
                 target="_blank"
@@ -69,6 +66,9 @@ function Project2() {
               >
                프로젝트 Github
               </a>
+            </div>
+            </div>
+
             </div>
           </main>
         </section>
