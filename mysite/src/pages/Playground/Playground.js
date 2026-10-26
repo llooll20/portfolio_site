@@ -23,6 +23,12 @@ function Playground() {
             <div className="Playground-title">
                 {selectedPlayground === "Playground1" && <Playground1 />}
                 {selectedPlayground === "Playground2" && <Playground2 />}
+                <iframe
+                src="https://carrotgame1-git-main-ski7.vercel.app/"
+                title="Carrot Game"
+                className="Playground-game"
+                allowFullScreen
+                />
             </div>
             </div>
         </Layout>  
