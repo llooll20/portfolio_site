@@ -269,3 +269,19 @@
   border-top: 1px solid var(--border);
   color: var(--text-secondary);
 }
+
+.CarrotGame-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 16px 0;
+    background-color: #4f7c45;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.CarrotGame-button:hover {
+    background-color: #3d6335;
+}
