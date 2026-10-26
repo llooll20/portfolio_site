@@ -48,7 +48,6 @@ function Project3() {
 
               <div className="project-media">
 
-              {/* 이미지 업로드 기능*/}
               <div className="project-image">
                 <img
                   src={mission_img}
